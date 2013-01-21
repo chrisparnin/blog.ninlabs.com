@@ -22,7 +22,7 @@ theme:
   name: "twitter"
 
 posts:
-  permalink: "/:categories/:title/"
+  permalink: "/:year/:month/:title/"
   summary_lines: 20
   latest: 5
 

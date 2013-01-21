@@ -1,10 +1,10 @@
-title : Blog Title
-tagline: Blog Tagline
+title : ninlabs research
+tagline: Software development and research blog
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Chris Parnin
+  email : chris.parnin@gatech.edu
+  github : chrisparnin
+  twitter : chrisparnin
   feedburner : feedname
 
 navigation :
@@ -13,4 +13,3 @@ navigation :
   - categories.html
   - pages.html
   - about.md
-  
