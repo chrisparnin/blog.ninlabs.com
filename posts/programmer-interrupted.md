@@ -101,7 +101,7 @@ When multiple modalities are present in the same stimulus, more pathways are act
 
 An **associative link** helps a programmer by situating information of multiple modalities with a program element.  In particular, by improving navigating document tabs, which default configuration are especially spartan, often just showing the name of the document. 
 
-![AssociativeLink](/media/AssociativeLink.png)
+![AssociativeLink](https://raw.github.com/chrisparnin/blog.ninlabs.com/master/media/AssociativeLink.png)
 
 #### Episodic Memory
 
