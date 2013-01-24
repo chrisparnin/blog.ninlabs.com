@@ -52,11 +52,11 @@ We also looked at some of the ways programmers coped with interruption:
 
 Research shows that the worst time to interrupt anyone is when they have the highest memory load.  Using neural correlates for memory load, such as pupillometry, studies have shown that interruptions during peak loads cause the biggest disruption([Iqbal:04][]).
 
-![Pupil](/media/Pupil.png)
+![Pupil]({{urls.media}}/Pupil.png)
 
 We looked at subvocal utterances during a programming tasks to find different levels of memory load during programming tasks ([Parnin:11][]).
 
-![Subvocal](/media/Subvocal.png)
+![Subvocal]({{urls.media}}/Subvocal.png)
 
 If an interrupted person is allowed to suspend their working state or reach a "good breakpoint", then the impact of the interruption can be reduced ([Trafton:03][]).  However, programmers often need at least 7 minutes before they transition from a high memory state to low memory state ([Iqbal:07][]).  An experiment evaluating which state a programmer less desired an interruption found these states to be especially problematic ([Fogarty:05]):
 
@@ -77,7 +77,7 @@ _Prospective memory_ holds reminders to perform future actions in specific circu
 Various studies have described how developers have tried to cope with prospective memory failures.  For example, developers often leave TODO comments in the code they are working on ([Storey:08][]). A drawback of this mechanism is that there is no impetus for viewing these reminders.  Instead, to force a prospective prompt, developers may intentionally leave a compile error to ensure they remember to perform a task ([Parnin:10][]).  A problem with compile errors is that they inhibit the ability to switch to another task on the same codebase.  Finally, developers also do what other office workers do: leave sticky notes and emails to themselves ([Parnin:10][]).
 
 A **smart reminder** is reminder that can be triggered based on conditions such as _a teammate checking in code_, or _proximity to a reminder_:
-![SmartReminder](/media/SmartReminder.png)
+![SmartReminder]({{urls.media}}/SmartReminder.png)
 
 #### Attentive Memory
 
@@ -87,7 +87,7 @@ Some programming tasks require developers to make similar changes across a codeb
 
 **Touch points** allow a programmer to track status across many locations in code.
 
-![TouchPoint](/media/TouchPoint.png)
+![TouchPoint]({{urls.media}}/TouchPoint.png)
 
 #### Associative Memory
 
@@ -101,7 +101,7 @@ When multiple modalities are present in the same stimulus, more pathways are act
 
 An **associative link** helps a programmer by situating information of multiple modalities with a program element.  In particular, by improving navigating document tabs, which default configuration are especially spartan, often just showing the name of the document. 
 
-![AssociativeLink](https://raw.github.com/chrisparnin/blog.ninlabs.com/master/media/AssociativeLink.png)
+![AssociativeLink]({{urls.media}}/AssociativeLink.png)
 
 #### Episodic Memory
 
@@ -114,7 +114,7 @@ When recalling from episodic memory, developers commonly experience failures tha
 A **code narrative** is an episodic memory aid that helps a developer recall contextual details and the history of programming activity. 
 Two narrative structures are currently supported: A review mode for high-level recall of events and a share mode for publishing a coding task for others.
 
-![CodeNarrative](/media/CodeNarrativeEx.png)
+![CodeNarrative]({{urls.media}}/CodeNarrativeEx.png)
 
 See [a blog post](http://codenarratives.tumblr.com/post/22999194625/sharing-wrappers-with-datacontractjsonserializer-and) shared and published semi-automatically via a code narrative.
 
@@ -134,7 +134,7 @@ Studies examining the difference between an expert and novice find that performa
 **Sketchlets**(alpha) helps a programmer form and prime concepts by 
 supporting abstraction and reviewing concepts that need to be refreshed.
 
-![Sketchlets](/media/Sketchlets.png)
+![Sketchlets]({{urls.media}}/Sketchlets.png)
 
 ### Future
 

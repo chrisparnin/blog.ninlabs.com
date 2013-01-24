@@ -21,7 +21,7 @@ Finally, here is a simple example of customizing the expander icon with just 25%
 Get the [full demo](https://github.com/chrisparnin/wpfPlusMinusExpander) from github, or checkout these snippets below.
 
 First the style for header and icon.
-[code autolinks="false" language="XML"]
+
     <Style x:Key="ExpanderHeaderFocusVisual">
         <Setter Property="Control.Template">
             <Setter.Value>
@@ -56,10 +56,9 @@ First the style for header and icon.
             </Setter.Value>
         </Setter>
     </Style>
-[/code]
 
 And the style for the expander itself:
-[code autolinks="false" lang="XML"]
+
     <Style x:Key="StatusGroupExpander" TargetType="{x:Type Expander}">
         <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="Background" Value="Transparent"/>
@@ -88,4 +87,3 @@ And the style for the expander itself:
             </Setter.Value>
         </Setter>
     </Style>
-[/code]
