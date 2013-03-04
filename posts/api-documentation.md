@@ -25,6 +25,8 @@ Developers revolt
 Instead, developers have been indirectly documenting APIs themselves through a process called [crowd documentation](http://blog.ninlabs.com/2012/05/crowd-documentation/), by publishing blog posts and curating questions and answers about APIs. 
 We previously found that even without any inherent coordination, a crowd of developers can cover as much as 88% of the API classes in discussions on Stack Overflow.
 
+We collected 1,316 days of developer history (average 11 weeks per developer) and we found 9,234 visits to [stackoverflow](http://stackoverflow.com), as well as 2,547 to [developer.android.com](http://developer.android.com), which hosts the official documentation for Android.  We also analyzed the code examples that could be found in the Stack Overflow data dump and [developer.android.com/guide](http://developer.android.com/guide).
+
 #### In our new study, we find that:
 
 * Developers may be getting as much as 50% of their documentation from Stack Overflow.
@@ -46,12 +48,37 @@ We previously found that even without any inherent coordination, a crowd of deve
 Where do developers go?
 -------------
 
-A day in the life of three different developers (A,E,Q) and a visualizatin of their of web visits:
+A comparison of visits to Stack Overflow questions tagged "android" vs visits to official android documentation.
+
+![CrowdVsTraditional]({{urls.media}}/CrowdVsTraditional.png)
+
+A day in the life of three different developers (A,E,Q) and a visualization of their of web visits:
 
 ![DeveloperVisits]({{urls.media}}/DeveloperVisits.png)
 
+Some quotes from developers we surveyed about Android official documentation:
+
+> **C:** Keeping it updated and relevant to all versions of Android.  Additionally, a lot of times the examples are for use cases that are irrelevant to what I need it for (either too complicated or not detailed enough - it’s a fine line!).  
+> **D:** The biggest thing lacking from official documentation is edge case and error documentation.  
+> **J:** The official docs don’t have enough examples!
+
+Code examples?
+-------------
+
+The official Android documentation guide only had *explanations* (measured by API class references in a paragraph of text) for 36% of its API classes, compared to Stack Overflow’s 88%.
+
+**There were twice as many code examples on Stack Overflow than official documentation**: The official Android documentation guide only has code snippets for 26% of its API classes compared to Stack Overflow’s 56% in accepted answers.
+
+The entire official Android documentation guide provides a total of 1,711 authoritative code snippets, compared to 156,747 crowd-curated code snippets on Stack Overflow.
+
 Documentation usage patterns.
 -------------
+
+#### Developer flows
+
+![DeveloperFlow]({{urls.media}}/DeveloperFlow.png)
+
+Most developers visisted Stack Overflow via search, whereas they directly visited official documentation.  Two developers: A and B, directly visited Stack Overflow to continually monitor the "newest android questions" on Stack Overflow.
 
 #### Apprenticeships with experts
 
@@ -62,10 +89,8 @@ Interestingly, that is the same philosophy supported by the recent [Stack-ed](ht
 > The most reputable StackOverflow contributors and their accepted answers to questions.
 
 
-* Android less documentation
-
 But 17 developers...
 -------------
 > You only studied 17 developers.  What can you really conclude?  
 
-We had to pay spend $1000 in amazon gift certificates to do this research. If you have doubts, the best way to help is by [donating your history]!  In return, you get a cool browser extension, [DocSight](http://chrome.google.com/webstore/detail/docsight/ceacnbgdhcnofnomlkmackaennjfmnpc), to revisit and visualize your own developer documentation history! 
+We had to pay spend `$1000` in amazon gift certificates to do this research. If you have doubts, the best way to help is by **[donating your history](http://www.cc.gatech.edu/~vector/donatehistory.html)**!  In return, you get a cool browser extension, [DocSight](http://chrome.google.com/webstore/detail/docsight/ceacnbgdhcnofnomlkmackaennjfmnpc), to revisit and visualize your own developer documentation history! 
