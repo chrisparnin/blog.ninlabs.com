@@ -2,8 +2,9 @@
 title: Api Documentation 
 subtitle: Where do developers go?
 date: '2013-03-04'
-description: Where do developers go?
+description:
 categories:
+tags:
 - research
 - programming
 - api
@@ -23,9 +24,9 @@ Developers revolt
 ------------
 
 Instead, developers have been indirectly documenting APIs themselves through a process called [crowd documentation](http://blog.ninlabs.com/2012/05/crowd-documentation/), by publishing blog posts and curating questions and answers about APIs. 
-We previously found that even without any inherent coordination, a crowd of developers can cover as much as 88% of the API classes in discussions on Stack Overflow.
+We previously found that even without any inherent coordination, a crowd of Android developers can cover as much as 88% of the API classes in discussions on Stack Overflow.
 
-We collected 1,316 days of developer history (average 11 weeks per developer) and we found 9,234 visits to [stackoverflow](http://stackoverflow.com), as well as 2,547 to [developer.android.com](http://developer.android.com), which hosts the official documentation for Android.  We also analyzed the code examples that could be found in the Stack Overflow data dump and [developer.android.com/guide](http://developer.android.com/guide).
+We collected 1,316 days of Android developer history (average 11 weeks per developer) and we found 9,234 visits to [stackoverflow](http://stackoverflow.com), as well as 2,547 to [developer.android.com](http://developer.android.com), which hosts the official documentation for Android.  We also analyzed the code examples that could be found in the Stack Overflow data dump and [developer.android.com/guide](http://developer.android.com/guide).
 
 #### In our new study, we find that:
 
@@ -47,6 +48,8 @@ We collected 1,316 days of developer history (average 11 weeks per developer) an
 
 Where do developers go?
 -------------
+
+We looked at developers (A-Q) and analyzed how often they visited an Android Stack Overflow question and official Android documentation.
 
 A comparison of visits to Stack Overflow questions tagged "android" vs visits to official android documentation.
 
@@ -78,7 +81,7 @@ Documentation usage patterns.
 
 ![DeveloperFlow]({{urls.media}}/DeveloperFlow.png)
 
-Most developers visisted Stack Overflow via search, whereas they directly visited official documentation.  Two developers: A and B, directly visited Stack Overflow to continually monitor the "newest android questions" on Stack Overflow.
+Most developers visited Stack Overflow via search, whereas they directly visited official documentation.  Two developers: A and B, directly visited Stack Overflow to continually monitor the "newest android questions" on Stack Overflow.
 
 #### Apprenticeships with experts
 
@@ -94,3 +97,5 @@ But 17 developers...
 > You only studied 17 developers.  What can you really conclude?  
 
 We had to pay spend `$1000` in amazon gift certificates to do this research. If you have doubts, the best way to help is by **[donating your history](http://www.cc.gatech.edu/~vector/donatehistory.html)**!  In return, you get a cool browser extension, [DocSight](http://chrome.google.com/webstore/detail/docsight/ceacnbgdhcnofnomlkmackaennjfmnpc), to revisit and visualize your own developer documentation history! 
+
+Please email `chris.parnin@gatech.edu` if you would like to see a more detailed research report or please comment below for any questions.
