@@ -27,4 +27,29 @@
     .custom-prose blockquote span {
         @apply block text-gray-800 not-italic font-bold mt-4;
     }
+
+        /* Style the <aside> element for reader comments */
+    .custom-prose aside {
+        @apply font-sans mx-auto my-12 not-italic text-gray-600 p-6 pl-[25px] border-l-8 border-blue-500 leading-relaxed relative bg-gray-50;
+    }
+
+    /* Optional: Styling for headers within the <aside> (e.g., commenter name) */
+    .custom-prose aside header h4 {
+        @apply text-lg font-semibold text-gray-800 mt-2 mb-4;
+    }
+
+    /* Optional: Styling for the comment text */
+    .custom-prose aside p {
+        @apply text-base text-gray-700 leading-relaxed;
+    }
+    
+    /* Optional: Add a subtle shadow to make the comment stand out */
+    .custom-prose aside {
+        @apply shadow-md rounded-lg;
+    }
+
+      /* Style for the second <aside> with a light blue border */
+    .custom-prose aside:nth-child(even) {
+        @apply border-l-8 border-blue-300; /* Change to light blue */
+    }
 }
