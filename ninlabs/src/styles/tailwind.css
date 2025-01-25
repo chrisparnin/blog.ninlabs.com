@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Remove opening and closing quotes */
+    .custom-prose blockquote p::before {
+        content: none; /* Remove the opening quote */
+      }
+    .custom-prose blockquote p::after {
+        content: none; /* Remove the closing quote */
+    }
+
+    .custom-prose blockquote {
+        @apply font-sans mx-auto my-12 not-italic text-gray-500 p-2 pl-[25px] 
+        border-l-8 border-teal-400 leading-relaxed relative bg-gray-100;
+    }
+/*    
+    .custom-prose blockquote::before {
+        content: "\201C";
+        @apply absolute text-teal-400 text-4xl;
+        font-family: Arial, sans-serif;
+        left: 10px;
+    }
+*/  
+    .custom-prose blockquote span {
+        @apply block text-gray-800 not-italic font-bold mt-4;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ninlabs2",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.1.7",
+    "@astrojs/mdx": "latest",
+    "@astrojs/sitemap": "latest",
+    "@astrojs/tailwind": "latest",
+    "@fontsource-variable/bricolage-grotesque": "latest",
+    "@fontsource-variable/inter": "latest",
+    "@iconify-json/bx": "latest",
+    "@iconify-json/simple-icons": "latest",
+    "@iconify-json/uil": "latest",
+    "@tailwindcss/typography": "latest",
+    "astro-icon": "latest",
+    "astro-navbar": "latest",
+    "astro-seo": "latest",
+    "sharp": "latest",
+    "tailwindcss": "latest"
+  }
+}
