@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Conference
 draft: false
 image:
   alt: ''

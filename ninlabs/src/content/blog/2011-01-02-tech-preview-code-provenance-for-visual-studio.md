@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Code
 draft: false
 image:
   alt: 'Show a history of copy/paste events in code'

@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Research
 draft: false
 image:
   alt: 'An image of pupil size and a graph showing effects of interruption (pupil diameter) based on task difficulty'

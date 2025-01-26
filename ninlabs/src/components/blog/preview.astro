@@ -1,7 +1,8 @@
 ---
 import { Picture } from "astro:assets";
+import { slugifyCategory } from "@utils/all";
 
-const { year, posts } = Astro.props;
+const { category, year, posts } = Astro.props;
 
 
 function replaceHyperlinksWithContent(html) {
@@ -12,7 +13,14 @@ function replaceHyperlinksWithContent(html) {
 }
 ---
 <main class="mt-16">
-    {year && <h3 class="max-w-4xl mx-auto">{year}</h3>}
+    {category && <div class="max-w-4xl mx-auto mb-4 text-xl font-medium">
+        Posts in
+        <span class="text-blue-400 uppercase tracking-wider">{category}</span>
+    </div>}
+    {year && <div class="max-w-4xl mx-auto mb-4 text-xl font-medium">
+        Posts in
+        <span class="uppercase tracking-wider">{year}</span>
+    </div>}
     <ul class="grid gap-16 max-w-4xl mx-auto">
     {
         posts.map( function (blogPostEntry, index) {
@@ -22,18 +30,12 @@ function replaceHyperlinksWithContent(html) {
         const firstParagraph = firstParagraphMatch ? replaceHyperlinksWithContent(firstParagraphMatch[0]) : "";
         
         return <li class="rounded-lg bg-white border-2 border-stone-200 p-5">
-            <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid grid-cols-2 gap-5 md:gap-10 ">
-                    <div>
-                        <div>
-                            <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
-                            {blogPostEntry.data.category}
-                            </span>
-                            <span class="text-gray-400"></span>
-                        </div>
-
+                    <div class="flex flex-col">
                         <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                            <a href={`/blog/${blogPostEntry.slug}`}>
                             {blogPostEntry.data.title}
+                            </a>
                         </h2>
 
                         <div class="flex gap-2 mt-3">
@@ -50,12 +52,30 @@ function replaceHyperlinksWithContent(html) {
                         <div>
                             {firstParagraph && (
                             <div class="mt-4 text-gray-500 text-sm">
-                                <div class="line-clamp-3 overflow-clip" set:html={firstParagraph} />
+                                <a href={`/blog/${blogPostEntry.slug}`}>
+                                    <div class="line-clamp-5 overflow-clip" set:html={firstParagraph} />
+                                </a>
                             </div>
                             )}
                         </div>
+                        <div class="pt-2 mt-auto">
+                            <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                                <a href={`/${slugifyCategory(blogPostEntry.data.category)}`}>
+                                    {blogPostEntry.data.category}
+                                </a>
+                            </span>
+                            <span class="text-gray-400">•</span>
+                            <a href={`/${blogPostEntry.data.publishDate.getFullYear()}`}>
+                                <time
+                                    class="text-gray-400"
+                                    datetime={blogPostEntry.data.publishDate.toISOString()}>
+                                    {blogPostEntry.data.publishDate.getFullYear()}
+                                </time>                            
+                            </a>
+                        </div>
                     </div>
                     <div class="mt-4">
+                    <a href={`/blog/${blogPostEntry.slug}`}>
                     {blogPostEntry.data.image.src && (
                         <Picture
                         src={blogPostEntry.data.image.src}
@@ -68,9 +88,9 @@ function replaceHyperlinksWithContent(html) {
                         class="w-full rounded-md object-cover object-center bg-white"
                         />
                     )}
+                    </a>
                     </div>
                 </div>
-            </a>
         </li>
         })
     }

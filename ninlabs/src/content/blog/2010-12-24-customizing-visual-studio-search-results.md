@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Code
 draft: false
 image:
   alt: 'Visual studio search results customized'

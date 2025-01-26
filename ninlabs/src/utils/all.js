@@ -7,3 +7,11 @@ export const getFormattedDate = (date) =>
         day: "numeric",
       })
     : "";
+
+export function slugifyCategory(category) {
+  return category
+    .toLowerCase() // Convert to lowercase
+    .replace(/[^a-z0-9\s-]/g, '') // Remove non-alphanumeric characters
+    .trim() // Remove leading/trailing whitespace
+    .replace(/\s+/g, '-'); // Replace spaces with dashes
+}

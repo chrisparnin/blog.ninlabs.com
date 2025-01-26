@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Research
 draft: false
 image:
   alt: ''

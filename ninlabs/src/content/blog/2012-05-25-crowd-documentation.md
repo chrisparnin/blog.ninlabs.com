@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Research
 draft: false
 image:
   alt: 'Tree map visualizing Stack Overflow discussions overlaid over Android classes'

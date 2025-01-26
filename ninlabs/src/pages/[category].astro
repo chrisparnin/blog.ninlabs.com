@@ -5,35 +5,37 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Preview from "@components/blog/preview.astro";
 
+import { slugifyCategory } from "@utils/all";
 
 export async function getStaticPaths() {
 
 	const posts = await getCollection('blog');
-    const postYears = new Map();
+    const postCategories = new Map();
 
     posts.forEach(post => {
 
-        const year = post.data.publishDate.getFullYear();
+        const category = slugifyCategory(post.data.category);
 
-        if (!postYears.get(year)) {
-            postYears.set(year, []);
+        if (!postCategories.get(category)) {
+            postCategories.set(category, []);
         }
 
-        postYears.get(year).push(post);
+        postCategories.get(category).push(post);
     });
 
-    return [...postYears.entries()].map(([year, posts]) => ({
-        params: { year },
+    return [...postCategories.entries()].map(([category, posts]) => ({
+        params: { category },
         props: { posts }
     }));
 };
 
-const { year } = Astro.params;
+const { category } = Astro.params;
 const { posts } = Astro.props;
 
 posts.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
+
 ---
 <Layout title="Blog">
   <Container>
@@ -43,7 +45,7 @@ posts.sort(function (a, b) {
         Research and reflections on software engineering and software development.
       </Fragment>
     </Sectionhead>
-    <Preview year={year} posts={posts}/>
+    <Preview category={category} posts={posts}/>
     <div class="text-center mt-8">
       <a
         href="/blog"

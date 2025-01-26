@@ -1,6 +1,6 @@
 ---
 author: Chris Parnin
-category: General
+category: Code
 draft: false
 image:
   alt: 'LabJack U3-LV'

@@ -10,7 +10,7 @@ image: {
     alt: "full stack web development"
 }
 publishDate: "2011-07-09 11:39"
-category: "Conference Report"
+category: "Conference"
 author: "Chris Parnin"
 tags: [research, conference]
 ---
