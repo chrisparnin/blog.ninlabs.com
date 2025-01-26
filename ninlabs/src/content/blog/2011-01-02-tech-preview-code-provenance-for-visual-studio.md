@@ -3,8 +3,8 @@ author: Chris Parnin
 category: General
 draft: false
 image:
-  alt: ''
-  src: ''
+  alt: 'Show a history of copy/paste events in code'
+  src: 'https://blog.ninlabs.com/wp-content/uploads/2011/01/codeprovenance.png'
 publishDate: '2011-01-02'
 snippet: ''
 tags:

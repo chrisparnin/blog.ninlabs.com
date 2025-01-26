@@ -4,7 +4,7 @@ category: General
 draft: false
 image:
   alt: ''
-  src: ''
+  src: '/media/ChampionedFeatures.png'
 publishDate: '2011-03-13'
 snippet: ''
 tags:
@@ -60,4 +60,4 @@ Finally, we found that the decision to use generics was mixed among developers i
 
 Even when the battle for releasing a new feature has been won, the war may continue on in much larger fronts within the trenches of software development.  Developers still have to struggle with migration efforts and settle the same heated debates the designers originally had.  Collecting empirical evidence early, providing migration tools and support, and building community support through social media should be standard practices for researchers and designers releasing features to the wild.
 
-To see more detail on this and other questions, see a [draft version](http://www.cc.gatech.edu/~vector/papers/msr11.pdf) of the paper.
+To see more detail on this and other questions, see a [version](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parnin2011jga.pdf) of the paper.

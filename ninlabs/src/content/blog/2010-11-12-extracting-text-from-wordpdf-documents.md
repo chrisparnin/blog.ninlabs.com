@@ -4,7 +4,7 @@ category: General
 draft: false
 image:
   alt: ''
-  src: ''
+  src: 'https://blog.ninlabs.com/wp-content/uploads/2010/11/papercloud.png'
 publishDate: '2010-11-12'
 snippet: ''
 tags:
@@ -13,10 +13,10 @@ title: Extracting text from Word/PDF documents
 ---
 
 Need to make a word cloud out of a whole bunch of documents or calculate some simple statistics?
-[Lucene](http://lucene.apache.org/java/docs/index.html) is great for indexing documents, but I wanted something quick and dirty I could mess around with.
+[Lucene](https://lucene.apache.org/java/docs/index.html) is great for indexing documents, but I wanted something quick and dirty I could mess around with.
 
 For example, here is a cloud tag from my research papers:
-[![](http://blog.ninlabs.com/wp-content/uploads/2010/11/papercloud.png)](http://blog.ninlabs.com/wp-content/uploads/2010/11/papercloud.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2010/11/papercloud.png)](https://blog.ninlabs.com/wp-content/uploads/2010/11/papercloud.png)
 
 Some quick code I cooked up to extract text from a collection of word/pdf:
 
@@ -109,6 +109,6 @@ Now you can filter down and process the results anyway you like:
     var filtered = ranked.Where( pair => IsAlphabeticString(pair.Key) ).ToList();
 ```
 
-Now, you can simply output this dictionary and use the output in a word cloud generator such as [wordle.net](http://www.wordle.net/create)
+Now, you can simply output this dictionary and use the output in a word cloud generator such as [wordle.net](https://www.wordle.net/create)
 
-You can download the whole thing here: [GenerateWordTagCloud.zip [C# VS2010 Project]](http://se.ninlabs.com/downloads/GenerateWordTagCloud.zip).
+You can download the whole thing here: [GenerateWordTagCloud.zip [C# VS2010 Project]](https://se.ninlabs.com/downloads/GenerateWordTagCloud.zip).

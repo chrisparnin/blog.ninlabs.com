@@ -26,7 +26,7 @@ Similarly, in our world we do not see the construction of the Eiffel Tower or th
 ### Did we make an impact?
 
 
-Did our research or tool make an impact? For example, we looked at whether developers choose to use a [refactoring tool or manual text manipulation](http://portal.acm.org/citation.cfm?id=1555044) to refactor a program.  Turns out, the developer's we studied used refactoring tools for less than 10% of refactorings. We're now asking the similar question about the impact of java generics.
+Did our research or tool make an impact? For example, we looked at whether developers choose to use a [refactoring tool or manual text manipulation](https://portal.acm.org/citation.cfm?id=1555044) to refactor a program.  Turns out, the developer's we studied used refactoring tools for less than 10% of refactorings. We're now asking the similar question about the impact of java generics.
 
 
 
@@ -34,21 +34,21 @@ Did our research or tool make an impact? For example, we looked at whether devel
 
 
 With more detailed history, we can ask more about how developers work.
-I started off with [simple questions](http://portal.acm.org/citation.cfm?id=1555044): how many files and methods do developers work with in a day), i.e. what is the mental workload?  Further, how well can we predict what these would be (i.e. building a recommendation tool)?  Next, I looked at work sessions in detail.  How long are developers working in a day, are they frequently interrupted?  This was interesting because it was one of the first research demonstrating how fragmented and broken a developer's day is and what they do to try to [recover](http://dx.doi.org/10.1109/ICPC.2009.5090030).
+I started off with [simple questions](https://portal.acm.org/citation.cfm?id=1555044): how many files and methods do developers work with in a day), i.e. what is the mental workload?  Further, how well can we predict what these would be (i.e. building a recommendation tool)?  Next, I looked at work sessions in detail.  How long are developers working in a day, are they frequently interrupted?  This was interesting because it was one of the first research demonstrating how fragmented and broken a developer's day is and what they do to try to [recover](https://dx.doi.org/10.1109/ICPC.2009.5090030).
 
 
 
 ### Personal and Social History
 
 
-More recently, I've looking how developers can actively use their personal history and even potentially socialize it. Here, interruptions, multi-tasking, and the very nature of memory was a big motivator.  Programming environments are the perfect breeding ground for forgetting what you were just doing.  I've been looking at different ways you can [present](http://portal.acm.org/citation.cfm?id=1753326.1753342) and interact with your own history to help you get back to speed when resuming a programming task.
+More recently, I've looking how developers can actively use their personal history and even potentially socialize it. Here, interruptions, multi-tasking, and the very nature of memory was a big motivator.  Programming environments are the perfect breeding ground for forgetting what you were just doing.  I've been looking at different ways you can [present](https://portal.acm.org/citation.cfm?id=1753326.1753342) and interact with your own history to help you get back to speed when resuming a programming task.
 
 
 
 ### History in the Future
 
 
-Looking to the future, I'm excited about some of the [code provenance](http://crest.cs.ucl.ac.uk/cow/9/) ideas coming out.  I have a cool Visual Studio 2010 extension that is records some cool stuff and will be doing user studies soon.  With my new history tool, I've been able to do things like
+Looking to the future, I'm excited about some of the [code provenance](https://crest.cs.ucl.ac.uk/cow/9/) ideas coming out.  I have a cool Visual Studio 2010 extension that is records some cool stuff and will be doing user studies soon.  With my new history tool, I've been able to do things like
 
 
 

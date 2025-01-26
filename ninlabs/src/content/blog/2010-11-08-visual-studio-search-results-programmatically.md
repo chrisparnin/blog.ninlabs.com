@@ -4,7 +4,7 @@ category: General
 draft: false
 image:
   alt: ''
-  src: ''
+  src: 'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240'
 publishDate: '2010-11-08'
 snippet: ''
 tags:

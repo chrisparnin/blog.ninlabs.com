@@ -3,8 +3,8 @@ author: Chris Parnin
 category: General
 draft: false
 image:
-  alt: ''
-  src: ''
+  alt: 'LabJack U3-LV'
+  src: 'https://blog.ninlabs.com/wp-content/uploads/2010/06/labjack-300x216.jpg'
 publishDate: '2010-06-24'
 snippet: ''
 tags:
@@ -15,21 +15,21 @@ tags:
 title: Recording EMG, Sending Event Pulses with LabJack
 ---
 
-[](http://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)[![](http://blog.ninlabs.com/wp-content/uploads/2010/06/emg.png)](http://blog.ninlabs.com/wp-content/uploads/2010/06/emg.png)[](http://blog.ninlabs.com/wp-content/uploads/2010/06/labjack.jpg)
+When recording EMG signals, you want to be able to segment and associate those signals with certain events, e.g., the presentation of a stimuli.  Because one of my goals is to recognize subvocalized words, it is even more important to get tight segmentation.
 
-When recording EMG signals, you want to be able to segment and associate those signals with certain events, e.g., the presentation of a stimuli.  Because one of my goals is to recognize subvocalized words, it is even more important to get tight segmentation. 
+[](https://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)[![](https://blog.ninlabs.com/wp-content/uploads/2010/06/emg.png)](https://blog.ninlabs.com/wp-content/uploads/2010/06/emg.png)[](https://blog.ninlabs.com/wp-content/uploads/2010/06/labjack.jpg)
 
 Here, we have an test audio signal (blue) and one channel of the corresponding EMG signal (biege).  I had to manually line this up, and have little confidence if it is correct.
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)](http://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)](http://blog.ninlabs.com/wp-content/uploads/2010/06/subvocal.png)
 
 Luckily, one the EMG devices I'm using supports sending events into the EMG stream to leave "marks" in the signal.  Using a Labjack device, I can send a digital pulse to the EMG recording device.
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2010/06/labjack-300x216.jpg)](http://blog.ninlabs.com/wp-content/uploads/2010/06/labjack.jpg)
+[![](https://blog.ninlabs.com/wp-content/uploads/2010/06/labjack-300x216.jpg)](http://blog.ninlabs.com/wp-content/uploads/2010/06/labjack.jpg)
 
 Now, I have another channel with event marks!
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2010/06/events.png)](http://blog.ninlabs.com/wp-content/uploads/2010/06/events.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2010/06/events.png)](http://blog.ninlabs.com/wp-content/uploads/2010/06/events.png)
 
 C# Code for Labjack.
 

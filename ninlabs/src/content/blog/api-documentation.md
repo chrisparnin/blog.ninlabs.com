@@ -4,7 +4,7 @@ category: General
 draft: false
 image:
   alt: ''
-  src: ''
+  src: '/media/CrowdVsTraditional.png'
 publishDate: '2013-03-04'
 snippet: ''
 tags:

@@ -1,0 +1,78 @@
+---
+import { Picture } from "astro:assets";
+
+const { year, posts } = Astro.props;
+
+
+function replaceHyperlinksWithContent(html) {
+  // Regular expression to match <a> tags and extract their inner content
+  return html.replace(/<a[^>]*>(.*?)<\/a>/g, (match, innerContent) => {
+    return innerContent; // Return only the content inside the <a> tag
+  });
+}
+---
+<main class="mt-16">
+    {year && <h3 class="max-w-4xl mx-auto">{year}</h3>}
+    <ul class="grid gap-16 max-w-4xl mx-auto">
+    {
+        posts.map( function (blogPostEntry, index) {
+        const rawHtml = blogPostEntry.rendered.html;
+
+        const firstParagraphMatch = rawHtml.match(/<p>(.*?)<\/p>/);
+        const firstParagraph = firstParagraphMatch ? replaceHyperlinksWithContent(firstParagraphMatch[0]) : "";
+        
+        return <li class="rounded-lg bg-white border-2 border-stone-200 p-5">
+            <a href={`/blog/${blogPostEntry.slug}`}>
+                <div class="grid grid-cols-2 gap-5 md:gap-10 ">
+                    <div>
+                        <div>
+                            <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                            {blogPostEntry.data.category}
+                            </span>
+                            <span class="text-gray-400"></span>
+                        </div>
+
+                        <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                            {blogPostEntry.data.title}
+                        </h2>
+
+                        <div class="flex gap-2 mt-3">
+                            <span class="text-gray-400">
+                                {blogPostEntry.data.author}
+                            </span>
+                            <span class="text-gray-400">• </span>
+                            <time
+                                class="text-gray-400"
+                                datetime={blogPostEntry.data.publishDate.toISOString()}>
+                                {blogPostEntry.data.publishDate.toDateString()}
+                            </time>
+                        </div>
+                        <div>
+                            {firstParagraph && (
+                            <div class="mt-4 text-gray-500 text-sm">
+                                <div class="line-clamp-3 overflow-clip" set:html={firstParagraph} />
+                            </div>
+                            )}
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                    {blogPostEntry.data.image.src && (
+                        <Picture
+                        src={blogPostEntry.data.image.src}
+                        alt={blogPostEntry.data.image.alt}
+                        sizes="(max-width: 400px) 100vw, 400px"
+                        width={400}
+                        height={300}
+                        loading={index <= 2 ? "eager" : "lazy"}
+                        decoding={index <= 2 ? "sync" : "async"}
+                        class="w-full rounded-md object-cover object-center bg-white"
+                        />
+                    )}
+                    </div>
+                </div>
+            </a>
+        </li>
+        })
+    }
+    </ul>
+</main>

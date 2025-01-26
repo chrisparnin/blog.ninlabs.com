@@ -3,8 +3,8 @@ author: Chris Parnin
 category: General
 draft: false
 image:
-  alt: ''
-  src: ''
+  alt: 'An image of pupil size and a graph showing effects of interruption (pupil diameter) based on task difficulty'
+  src: '/media/Pupil.png'
 publishDate: '2013-01-19'
 snippet: ''
 tags:

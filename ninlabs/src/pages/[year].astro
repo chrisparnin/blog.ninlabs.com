@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Preview from "@components/blog/preview.astro";
+
+
+export async function getStaticPaths() {
+
+	const posts = await getCollection('blog');
+    const postYears = new Map();
+
+    posts.forEach(post => {
+
+        const year = post.data.publishDate.getFullYear();
+
+        if (!postYears.get(year)) {
+            postYears.set(year, []);
+        }
+
+        postYears.get(year).push(post);
+    });
+
+    return [...postYears.entries()].map(([year, posts]) => ({
+        params: { year },
+        props: { posts }
+    }));
+};
+
+const { year } = Astro.params;
+const { posts } = Astro.props;
+---
+<Layout title="Blog">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">ninlabs research</Fragment>
+      <Fragment slot="desc">
+        Research and reflections on software engineering and software development.
+      </Fragment>
+    </Sectionhead>
+    <Preview year={year} posts={posts}/>
+  </Container>
+</Layout>

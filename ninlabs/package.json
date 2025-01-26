@@ -6,10 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "publish": "rsync -av --exclude='/wp-content/' --delete dist/ gameweld@blog.ninlabs.com:/home/gameweld/blog.ninlabs.com/"
   },
   "dependencies": {
-    "astro": "^5.1.7",
     "@astrojs/mdx": "latest",
     "@astrojs/sitemap": "latest",
     "@astrojs/tailwind": "latest",
@@ -19,6 +19,7 @@
     "@iconify-json/simple-icons": "latest",
     "@iconify-json/uil": "latest",
     "@tailwindcss/typography": "latest",
+    "astro": "^5.1.7",
     "astro-icon": "latest",
     "astro-navbar": "latest",
     "astro-seo": "latest",

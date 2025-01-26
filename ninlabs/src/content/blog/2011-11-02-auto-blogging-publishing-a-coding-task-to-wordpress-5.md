@@ -14,26 +14,11 @@ tags:
 title: Auto-blogging - Publishing a coding task to wordpress.
 ---
 
-**UPDATE:**
-
-
 Commonly, we need to perform a programming task that we do not know how to do or is not well-documented. Collectively, we perform these reoccurring programming tasks all the time, but only a few of us actively blog or contribute to sites like stackoverflow with answers.  Thus, there are many remaining programming tasks, which are never documented for other teammates (on internal company blogs), don't have any (good) official documentation, or discussion on blogs or Q&A; sites.
-
-
-
-
 
 If we can make it easier for people to blog, or share these experiences, then collectively we can make learning about these things a whole lot easier.  This might also make other situations, like a task-hand off to another teammate easier.  This post is a research demonstration of a technique that analyzes the coding history of a programmer and then automatically creates a blog summary of how they programmed that bit of functionality.  This is still at the earliest stages, but I hope there is a lot of room for growth and expansion.
 
-
-
-
-
 Check out the demonstration, and then some of the next steps below.
-
-
-
-
 
 ## Proof-of-concept: Auto-generating a coding task blog post
 
@@ -61,7 +46,7 @@ First, click "Auto-Populate" (by default looks at most recent activity in 24 hou
 
 
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step1.png)](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step1.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step1.png)](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step1.png)
 
 
 
@@ -69,7 +54,7 @@ This populates the code narrative with a series of code changes, chunked by file
 
 
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step2.png)](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step2.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step2.png)](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step2.png)
 
 
 The code snippet has symbolic links such as method definitions that can be clicked to return to that location in code (if more context is needed).  The code snippet can be edited or removed as needed.
@@ -82,7 +67,7 @@ Another useful item is a section.  Sections can be used to break up the code sni
 
 
 
-[![](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step3.png)](http://blog.ninlabs.com/wp-content/uploads/2011/11/Step3.png)
+[![](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step3.png)](https://blog.ninlabs.com/wp-content/uploads/2011/11/Step3.png)
 
 
 
@@ -154,7 +139,7 @@ Next up, I create a BlogConnector which will provide the primary abstraction for
 ```
 
 But, `MetaWeblogClientProtocol` is where all the magic happens.  This is using the `XML-RPC` protocol to do the actual interaction with the wordpress backend.
-This requires a 3rd party library, which can be found [here](http://www.xml-rpc.net/download.html).
+This requires a 3rd party library, which can be found [here](https://www.xml-rpc.net/download.html).
 
 
 ```c#
@@ -261,13 +246,13 @@ Finally, we can hook up the command, put everything together, and then publish t
 
 Coming up, hoping to expand this in several ways, and answer many research questions I have!
 
-First a shout out to a [previous post](http://www.devx.com/VS_2010/Article/44073) that has helped point out some of the basic technology approaches for doing this.
+First a shout out to a [previous post](https://www.devx.com/VS_2010/Article/44073) that has helped point out some of the basic technology approaches for doing this.
 
   * working on algorithms that chunk up the code snippets more intelligently,
   
   * auto-generating sections based on coding activity and breaks,
   
-  * auto-generating exposition based on activities and using as a place for adding interesting facts about the code snippet or task (copied X code from [this blog post](http://blog.ninlabs.com/2011/01/tech-preview-code-provenance-for-visual-studio/)), or a troublesome exception that was happening,
+  * auto-generating exposition based on activities and using as a place for adding interesting facts about the code snippet or task (copied X code from [this blog post](https://blog.ninlabs.com/2011/01/tech-preview-code-provenance-for-visual-studio/)), or a troublesome exception that was happening,
   
   * improving code narrative edit UI, and
   
