@@ -15,7 +15,7 @@ title: 'AI and Two Hundred Dollar Tasks'
 
 ## $200 Tasks
 
-In 2013, inspired by GitHub's octocat, I too wanted a mascot. It wasn't something I _exactly_ needed, but I thought would be interesting to have. I had come across a freelance designer, and decided to splurge and commission a design. The designer did good work, and I was happy with the results. Overall, it cost $200.
+In 2013, inspired by GitHub's octocat, I too wanted a mascot. It wasn't something I _exactly_ needed, but I thought would be interesting to have. I had come across a [freelance designer](https://catplusmouse.com), and decided to splurge and commission a design. The designer did good work, and I was happy with the results. Overall, it cost $200.
 
 <img src="/media/monkey/Ninlabs_Monkey_Whole.png" width="100px"/>
 
