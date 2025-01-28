@@ -4,9 +4,12 @@ import { getFormattedDate } from "@utils/all";
 import Layout from "./Layout.astro";
 
 const { frontmatter } = Astro.props;
+
+const previewImg = frontmatter.image.src || '/ninlabs.png'
+
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} previewData={frontmatter}>
   <Container>
     <div class="w-full mt-14">
       <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">

@@ -5,8 +5,9 @@ draft: false
 image:
   alt: ''
   src: '/media/monkey/yard.jpg'
+  opengraph: '/opengraph/opengraph_yard.png'
 publishDate: '2025-01-27'
-snippet: ''
+snippet: "In 2013, inspired by GitHub's octocat, I too wanted a mascot. It wasn't something I exactly needed, but I thought would be interesting to have..."
 tags:
 - ai
 - programming
@@ -34,6 +35,6 @@ We can also think of other professional services that are slightly more costly. 
 
 ![landscape](/media/monkey/yard.jpg)
 
-When it comes to these more complex tasks outside benchmarks, AI stumbles. For example, Devin [bungling programming tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), Operator [stumped by web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/), incorrectly answer Benedict Evan's [How many people were employed as elevator operators in 1980](https://www.ben-evans.com/benedictevans/2025/1/the-problem-with-better-models), and my personal favorite, fail to create a complex excel template from an image.
+When it comes to these more complex tasks outside benchmarks, AI stumbles. For example, Devin [bungling programming tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), Operator [stumped by web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/), incorrectly answering Benedict Evan's [How many people were employed as elevator operators in 1980](https://www.ben-evans.com/benedictevans/2025/1/the-problem-with-better-models), and my personal favorite, failing to create a complex excel template from an image.
 
 No doubt, the progress we've seen in AI so far is amazing, but economically, we're just beginning to scratch the surface of being able to solve tasks we'd pay for.

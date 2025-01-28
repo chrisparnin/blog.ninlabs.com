@@ -6,23 +6,31 @@ import "@fontsource-variable/inter/index.css";
 import '@fontsource-variable/bricolage-grotesque';
 
 import '../styles/tailwind.css';
+import type { InferEntrySchema } from "astro:content";
 
 export interface Props {
   title: string;
+  previewData?: InferEntrySchema<"blog">;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/ninlabs.png",
-  Astro.site
-).toString();
+const { title, previewData } = Astro.props;
 
-const { title } = Astro.props;
+const previewImg = previewData?.image.opengraph || previewData?.image.src || "/ninlabs.png"
+const previewImgAlt = previewData?.image.alt || "ninlabs blog post"
+const description = previewData?.snippet || "NINlabs is a research blog site for software engineering, AI, and programming."
 
 const makeTitle = title
   ? title + " | " + "NINlabs"
   : "NINlabs";
+
+const resolvedImageWithDomain = new URL(
+ previewImg,
+  Astro.site
+).toString();
+
+
 ---
 
 <!DOCTYPE html>
@@ -36,17 +44,18 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="NINlabs is a research blog site for software engineering, AI, and programming."
+      description={description}
       canonical={canonicalURL}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `NINlabs`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "NINlabs homepage",
+          alt: previewImgAlt,
+          url: resolvedImageWithDomain
         },
       }}
     />

@@ -10,6 +10,7 @@ const blogCollection = defineCollection({
     image: z.object({
       src: z.string(),
       alt: z.string(),
+      opengraph: z.string().optional()
     }),
     publishDate: z.string().transform(str => new Date(str)),
     author: z.string().default('Chris Parnin'),
