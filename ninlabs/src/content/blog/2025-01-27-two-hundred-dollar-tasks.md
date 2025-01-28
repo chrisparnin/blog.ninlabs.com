@@ -29,7 +29,7 @@ Today, I can ask about any AI tool to help me create a mascot. I would certainly
 
 ![ai slop](/media/monkey/AI_monkey.jpg)
 
-In other contexts, such a programming, AI can excel in tasks, such as helping a programmer debug an exception, when given appropriate conversational cues, as demonstrated in research we recently published [Conversational Debugging with GitHub Copilot](https://www.microsoft.com/en-us/research/publication/lets-fix-this-together-conversational-debugging-with-github-copilot/).
+In other contexts, such a programming, AI can excel in tasks, such as helping a programmer debug an exception, when given appropriate conversational cues, as demonstrated in research we recently published: [Conversational Debugging with GitHub Copilot](https://www.microsoft.com/en-us/research/publication/lets-fix-this-together-conversational-debugging-with-github-copilot/).
 
 ## What AI can't do, yet
 
