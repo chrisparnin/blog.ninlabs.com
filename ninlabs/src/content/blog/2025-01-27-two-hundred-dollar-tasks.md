@@ -21,14 +21,14 @@ In 2013, inspired by GitHub's octocat, I too wanted a mascot. It wasn't somethin
 
 There are many examples of these _$200 tasks_: a professional headshot, text transcription from audio, translation of document, or writing an article. They tend to require some level of specialized skills or equipment, are transactional in nature, and have well-defined units of output. They are the types of tasks that fit well in the side hustle ecosystem or a platform like Fiverr.
 
-## $200 Tasks
+## What AI can do
 
 Current AI technology now happens to be sufficiently capable of performing $200 tasks. 
 Today, I can ask about any AI tool to help me create a mascot. I would certainly need a lot of back and forth, with the design, and I would need some last mile fixes and touch up. While I'm not exactly happy with the results, if I had these tools available in 2013, I might have just went with the generated AI slop.
 
 ![ai slop](/media/monkey/AI_monkey.jpg)
 
-## What we can't do, yet
+## What AI can't do, yet
 
 We can also think of other professional services that are slightly more costly. Tasks that require more contextual and deep knowledge, good taste, and handling ambiguity. For example, create a landscape design:
 
