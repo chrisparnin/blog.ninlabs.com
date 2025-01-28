@@ -19,7 +19,7 @@ In 2013, inspired by GitHub's octocat, I too wanted a mascot. It wasn't somethin
 
 <img src="/media/monkey/Ninlabs_Monkey_Whole.png" width="100px"/>
 
-There are many examples of these _$200 tasks_: a professional headshot, text transcription from audio interviews, translation of document, or writing an article. They tend to require a basic level of specialized skills or equipment, transactional, and have well-defined units of output. They are the types of tasks that fit well in the side hustle ecosystem or a platform like Fiverr.
+There are many examples of these _$200 tasks_: a professional headshot, text transcription from audio, translation of document, or writing an article. They tend to require some level of specialized skills or equipment, are transactional in nature, and have well-defined units of output. They are the types of tasks that fit well in the side hustle ecosystem or a platform like Fiverr.
 
 ## $200 Tasks
 
