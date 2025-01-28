@@ -31,12 +31,18 @@ Today, I can ask about any AI tool to help me create a mascot. I would certainly
 
 In other contexts, such a programming, AI can excel in tasks, such as helping a programmer debug an exception, when given appropriate conversational cues, as demonstrated in research we recently published: [Conversational Debugging with GitHub Copilot](https://www.microsoft.com/en-us/research/publication/lets-fix-this-together-conversational-debugging-with-github-copilot/).
 
-## What AI can't do, yet
+## Landscape designer
 
 We can also think of other professional services that are slightly more costly. Tasks that require more contextual and deep knowledge, good taste, and handling ambiguity. For example, create a landscape design:
 
 ![landscape](/media/monkey/yard.jpg)
 
-When it comes to these more complex tasks outside benchmarks, AI stumbles. For example, Devin [bungling programming tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), Operator [stumped by web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/), ChatGPT incorrectly answering Benedict Evan's [How many people were employed as elevator operators in 1980](https://www.ben-evans.com/benedictevans/2025/1/the-problem-with-better-models), and my personal favorite, failing to create a complex excel template from an image.
+When I met with a landscape designer, I was amazed by her ability to walk through the property, immediately recognize species of trees and plants, identify aesthetic and functional issues, such as water drainage, and visualize possible designs that could integrate with our high-level goals. This was coupled with intimate knowledge of local plant species, including typical height, density, sun and water needs, and timing of flowering seasons.
+
+## What AI can't do, yet
+
+Unlike creating a quick mascot, for tasks like creating a landscape design, there is simply too much of a gap in expertise and quality for either AI or me to replicate.
+
+Unsurprisingly, when it comes to these more complex tasks outside of benchmarks, AI stumbles. For example, Devin [bungling programming tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), Operator [stumped by web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/), ChatGPT incorrectly answering Benedict Evan's [How many people were employed as elevator operators in 1980](https://www.ben-evans.com/benedictevans/2025/1/the-problem-with-better-models), and my personal favorite, failing to create a complex excel template from an image.
 
 No doubt, the progress we've seen in AI so far is amazing, but economically, we're just beginning to scratch the surface of being able to solve tasks we'd pay for.
