@@ -24,19 +24,16 @@ There are many examples of these _$200 tasks_: a professional headshot, text tra
 ## $200 Tasks
 
 Current AI technology now happens to be sufficiently capable of performing $200 tasks. 
-Today, I can ask about any AI tool to help me create a mascot. I would certainly need a lot of back and forth, with the design, and I would need some last mile fixes and touch up. While I'm not exactly happy with the results, if I had these tools available in 2013, I might have just went with the generated AI slop. Now, a commonly requested image for Dall-e is to help create logos.
+Today, I can ask about any AI tool to help me create a mascot. I would certainly need a lot of back and forth, with the design, and I would need some last mile fixes and touch up. While I'm not exactly happy with the results, if I had these tools available in 2013, I might have just went with the generated AI slop.
 
 ![ai slop](/media/monkey/AI_monkey.jpg)
 
 ## What we can't do, yet
 
-We can also think of other professional services that are slightly more costly. Tasks that require more contextual and deep knowledge, good taste, and handling ambiguity.
-
-* Create a landscape design.
-* Create a complex excel template from an image.
-* TDB: checking census data for stuff..
+We can also think of other professional services that are slightly more costly. Tasks that require more contextual and deep knowledge, good taste, and handling ambiguity. For example, create a landscape design:
 
 ![landscape](/media/monkey/yard.jpg)
 
-Currently, AI has struggled to move beyond transactional tasks. For example, [Devin bungling tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), or [Operator stumbling over web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/)
+When it comes to these more complex tasks outside benchmarks, AI stumbles. For example, [Devin bungling programming tasks](https://futurism.com/first-ai-software-engineer-devin-bungling-tasks), [Operator stumped by web popups](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/), fail to answer Benedict Evan's [How many people were employed as elevator operators in 1980](https://www.ben-evans.com/benedictevans/2025/1/the-problem-with-better-models), and my personal favorite, fail to create a complex excel template from an image.
 
+No doubt, the progress we've seen in AI so far is amazing, but economically, we're just beginning to scratch the surface of being able to solve tasks we'd pay for.
